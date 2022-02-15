@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+a {
+  text-decoration: none;
+}
+/* html {
+   单指垂直平移操作  
+  touch-action: pan-y;
+} */
+body {
+  background-color: #f4f5f7;
+}
+#app {
+  width: 1080px;
+  height: auto;
+  position: relative;
+  background-color: #eeeeee;
+  margin: 0 auto;
+  /* box-shadow: rgb(0 0 0 / 20%) 0px 5px 30px; */
+  /* border: 1px solid red; */
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+/* div {
+  outline: 1px solid hotpink;
+} */

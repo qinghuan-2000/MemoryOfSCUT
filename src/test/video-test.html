@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     
+    <meta charset="utf-8" />
+     
+    <title>菜鸟教程(runoob.com)</title>
+     
+  </head>
+  <body>
+    <video id="video0" width="320" height="240">
+      <source src="https://acimg.micerlabs.com/momscut/video/test3.3gp" type="video/mp4" />
+      <!-- <source src="../assets/logo.png" type="video/ogg" /> -->
+      您的浏览器不支持 HTML5 video 标签。
+    </video>
+    <audio src="https://acimg.micerlabs.com/momscut/audio/test2.mp3" controls></audio>
+    <script>
+      window.onload = () => {
+        let video0 = document.getElementById('video0');
+        video0.addEventListener('canplaythrough', (e) => {
+          console.log(e);
+          function play() {
+            e.target.play();
+            window.removeEventListener('click', play);
+          }
+          window.addEventListener('click', play);
+        });
+      };
+    </script>
+  </body>
+</html>
